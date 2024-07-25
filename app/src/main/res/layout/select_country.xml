@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16sp">
+
+        <ImageView
+            android:src="@drawable/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgClose"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="1"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"/>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/linear_gray_curve"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="1"
+            android:fontFamily="@font/satoshi_medium"
+            android:textSize="14sp"
+            android:textColor="@color/new_lite_blue"
+            android:text="Please select a city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textSize="16sp"
+        android:paddingStart="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/satoshi_medium"
+        android:hint="Select City"
+        android:text="Lag"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/blue_border"
+        android:layout_width="match_parent"
+        android:layout_height="76sp"/>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/city1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="4sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Laghouat Algeria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Laghouat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/border_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="DZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/city2"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Lagos, Nigeria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Muritala Muhammed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/border_flag__1_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="NG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city3">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Doha, Qatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Doha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/qa"
+                android:layout_width="22dp"
+                android:layout_height="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="QA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city4">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Doha, Qatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Doha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/qa"
+                android:layout_width="22dp"
+                android:layout_height="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="QA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/city5"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Doha, Qatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Doha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/qa"
+                android:layout_width="22dp"
+                android:layout_height="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="QA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/city6"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:src="@drawable/mappin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_text"
+                android:text="Doha, Qatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="Doha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginEnd="16sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/qa"
+                android:layout_width="22dp"
+                android:layout_height="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="12sp"
+                android:textColor="@color/new_lite_gray"
+                android:text="QA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

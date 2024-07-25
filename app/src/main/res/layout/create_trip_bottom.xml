@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/lytTop">
+
+        <ImageView
+            android:padding="16sp"
+            android:src="@drawable/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:padding="16sp"
+            android:src="@drawable/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="16sp"
+        android:layout_below="@id/lytTop"
+        android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Create a Trip"
+            android:textColor="@color/black_text"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Let's Go! Build Your Next Adventure"
+            android:textColor="@color/new_lite_blue"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/line_gray"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="30sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/satoshi_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip Name"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_gray"
+            android:paddingStart="16sp"
+            android:paddingEnd="14sp"
+            android:textSize="16sp"
+            android:fontFamily="@font/satoshi_medium"
+            android:hint="Enter trip name"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="6sp"
+            android:background="@drawable/edittext_bg_black_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="56sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/satoshi_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Style"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg_black_stroke"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="6sp"
+            >
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spTravelStyle"
+                android:entries="@array/trip_planner_travel_style"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:paddingStart="10sp"
+                android:paddingEnd="14sp"
+                android:textSize="16sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:layout_width="match_parent"
+                android:layout_height="56sp"/>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/satoshi_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip Description"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="4sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:background="@drawable/edittext_bg_black_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="120sp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:inputType="textPersonName"
+                android:id="@+id/etBio"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:layout_marginTop="6sp"
+                android:textColor="@color/black_text"
+                android:hint="Tell us more about the trip"
+                android:paddingStart="14dp"
+                android:paddingEnd="5sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:elevation="0sp"
+            android:fontFamily="@font/satoshi_medium"
+            android:textSize="14sp"
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="26sp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_blue_curve_4"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

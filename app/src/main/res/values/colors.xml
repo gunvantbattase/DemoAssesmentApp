@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="booknow">#00004A</color>
+    <color name="price_blue">#0054E4</color>
+    <color name="wallet_compo">#E0EAFB</color>
+    <color name="wallet_setup">#F7F9FC</color>
+    <color name="verification_color">#1D2433</color>
+    <color name="wallet_sheet">#FAFAFA</color>
+
+
+
+
+    <color name="color_primary">#3377FF</color> <!-- #DA615C -->
+    <color name="color_primary_variant">#EA8277</color> <!-- #EA8277 -->
+    <color name="green">#29E36E</color>
+    <color name="red">#D50000</color>
+    <color name="secondary">#A2A2A2</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="gray_dark">#B8B6B6</color>
+    <color name="black_tone">#3A3F4E</color>
+    <color name="secondary_light">#B8B8B8</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_back">#00000000</color>
+    <color name="blue_lite">#CDE1F1</color>
+    <color name="black_transparent">#8A000000</color>
+    <color name="main_blue">#287BE0</color>
+    <color name="main_blue_lite_2">#19287BE0</color>
+    <color name="main_blue_lite_1">#80287BE0</color>
+    <color name="main_black">#444655</color>
+    <color name="black_lite">#9A292929</color>
+    <color name="blue_lite_lite">#1A57B8</color>
+    <color name="blue_dot">#0A6CE4</color>
+    <color name="gold_lite">#19D6A419</color>
+    <color name="gold">#FDCC42</color>
+    <color name="platinum">#E5E4E2</color>
+    <color name="diamond">#87CEEB</color>
+    <color name="navy_blue_lite">#193E5BAE</color>
+    <color name="green_lite">#1900954F</color>
+    <color name="purple_lite">#80AE8CFD</color>
+    <color name="green_gradient">#8034923D</color>
+    <color name="matt_black">#28282B</color>
+    <color name="red_glozzy">#FF0000</color>
+    <color name="blue_text">#2A287BE0</color>
+    <color name="blackie">#444655</color>
+    <color name="black_gray">#98A2B3</color>
+    <color name="line_gray">#F0F2F5</color>
+    <color name="black_text">#1D2433</color>
+    <color name="blue_link">#0D6EFD</color>
+    <color name="vacation_price_details">#FEF6E7</color>
+    <color name="line_lite_grey">#D0D5DD</color>
+    <color name="fab_white">#E7F0FF</color>
+    <color name="white_20_tr">#34FFFFFF</color>
+    <color name="off_white">#F5F5F5</color>
+    <color name="convert_points_color">#F58A07</color>
+    <color name="new_lite_blue">#647995</color>
+    <color name="new_lite_gray">#676E7E</color>
+    <color name="new_line_gray">#D0D5DD</color>
+    <color name="new_red">#D42620</color>
+    <color name="new_red_price">#865503</color>
+    <color name="setupwallet_progress_color">#B1CAF6</color>
+
+    <color name="username_blue">#00007E</color>
+    <color name="username_grp">#3C3C43</color>
+
+
+    <color name="new_blue">#0054E4</color>
+    <color name="new_yellow">#F3CC30</color>
+    <color name="new_card_blue">#569AFE</color>
+    <color name="new_card_pink">#E26E6A</color>
+    <color name="new_card_black">#3B4849</color>
+    <color name="new_card_purple">#9260A1</color>
+    <color name="new_card_green">#40E585</color>
+    <color name="new_lite_white_bg">#F9FAFB</color>
+    <color name="new_lite_white_bg_20">#33F9FAFB</color>
+    <color name="new_lite_blue_bg">#667185</color>
+    <color name="new_lite_orange">#FFAA54</color>
+    <color name="new_lite_blue_gray">#647995</color>
+    <color name="blue_focused_color">#4B4EFC</color>
+    <color name="gray_zero_color">#8F8F8F</color>
+    <color name="new_sand_color">#FEF6E7</color>
+    <color name="new_sand_color_medium">#F7D394</color>
+    <color name="new_sand_color_dark">#865503</color>
+    <color name="new_red_lite">#FBEAE9</color>
+    <color name="new_grass_green">#E7F6EC</color>
+    <color name="new_dark_grass_green">#0F973D</color>
+    <color name="indicator_blue_new">#33343330</color>
+    <color name="indicator_lite_black_new">#80101928</color>
+    <color name="new_dark_brown">#7A4504</color>
+    <color name="new_lite_brown">#FEF4E6</color>
+    <color name="new_extra_dark_gray">#344054</color>
+    <color name="new_back_dark_blue">#537CC6</color>
+    <color name="gray_darker_controller">#2D2D2D</color>
+    <color name="new_red_dark">#9E0A05</color>
+    <color name="new_blue_trans">#324A76</color>
+    <color name="new_dark_green">#036B26</color>
+    <color name="new_black_blue">#00004A</color>
+    <color name="new_hint_gray">#9CA3AF</color>
+    <color name="new_line_thick">#E5E7EB</color>
+    <color name="new_sky_blue_lite">#647995</color>
+    <color name="new_orange">#FF4E0D</color>
+    <color name="indicator_white_transparent_color">#4D101928</color>
+    <color name="white_transparent">#33FFFFFF</color>
+    <color name="new_black">#1C1B1F</color>
+    <color name="blue_black">#00007D</color>
+
+    <color name="main_color_black">#292929</color>
+    <color name="main_color_gray">#707989</color>
+    <color name="main_line_color_gray">#E4E7EC</color>
+    <color name="new_trip">#000031</color>
+    <color name="neutral_900">#2F2626</color>
+    <color name="neutral_750">#514646</color>
+    <color name="neutral_600">#6F6767</color>
+    <color name="neutral_500">#867F7F</color>
+    <color name="neutral_400">#939393</color>
+    <color name="neutral_350">#9497AA</color>
+    <color name="neutral_300">#B3B3B3</color>
+    <color name="neutral_200">#E3E3E3</color>
+    <color name="neutral_150">#ECEAEA</color>
+    <color name="neutral_100">#F2F2F2</color>
+    <color name="neutral_70">#F6F6F6</color>
+    <color name="neutral_60">#FCFCFC</color>
+    <color name="neutral_50">#FFFFFF</color>
+
+    <color name="dark_70">#FFFFFF</color>
+    <color name="background_color_appbar">#FFFFFF</color>
+    <color name="background_color_item">#FFFFFF</color>
+</resources>

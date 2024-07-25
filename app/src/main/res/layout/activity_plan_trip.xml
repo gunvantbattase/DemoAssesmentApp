@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:padding="16sp"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan a Trip"
+            android:textColor="@color/black_text"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="18sp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/line_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/img_plan_trip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:text="Plan Your Dream Trip in Minutes"
+                android:layout_marginEnd="16sp"
+                android:layout_marginStart="34sp"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/black_text"
+                android:fontFamily="@font/satoshi_bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_below="@id/tvTitle"
+                android:text="Build, personalize, and optimize your itineraries with our trip planner. Perfect for getaways, remote workcations, and any spontaneous escapade."
+                android:layout_marginEnd="60sp"
+                android:layout_marginStart="34sp"
+                android:layout_marginTop="8sp"
+                android:textColor="@color/new_lite_gray"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/selectCountry"
+                        android:gravity="center"
+                        android:paddingStart="24sp"
+                        android:paddingEnd="10sp"
+                        android:paddingTop="22sp"
+                        android:paddingBottom="22sp"
+                        android:layout_marginTop="18sp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:background="@drawable/lite_white_stroke_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_location_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_marginStart="8sp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:text="Where to ?"
+                                android:textColor="@color/new_lite_blue"
+                                android:fontFamily="@font/satoshi_regular"
+                                android:textSize="12sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCountry"
+                                android:text="Select City"
+                                android:textColor="@color/new_lite_blue"
+                                android:fontFamily="@font/satoshi_bold"
+                                android:textSize="16sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12sp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/startDate"
+                            android:gravity="center"
+                            android:paddingStart="24sp"
+                            android:paddingEnd="10sp"
+                            android:paddingTop="22sp"
+                            android:paddingBottom="22sp"
+                            android:background="@drawable/lite_white_stroke_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5sp"
+                            >
+
+                            <ImageView
+                                android:src="@drawable/ic_calendar_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_marginStart="8sp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:text="Start Date"
+                                    android:textColor="@color/new_lite_blue"
+                                    android:fontFamily="@font/satoshi_regular"
+                                    android:textSize="12sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvStartDate"
+                                    android:text="Start Date"
+                                    android:textColor="@color/new_lite_blue"
+                                    android:fontFamily="@font/satoshi_bold"
+                                    android:textSize="16sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/endDate"
+                            android:gravity="center"
+                            android:paddingStart="24sp"
+                            android:paddingEnd="10sp"
+                            android:paddingTop="22sp"
+                            android:paddingBottom="22sp"
+                            android:background="@drawable/lite_white_stroke_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5sp">
+
+                            <ImageView
+                                android:src="@drawable/ic_calendar_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_marginStart="8sp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:text="End Date"
+                                    android:textColor="@color/new_lite_blue"
+                                    android:fontFamily="@font/satoshi_regular"
+                                    android:textSize="12sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvEndDate"
+                                    android:text="End Date"
+                                    android:textColor="@color/new_lite_blue"
+                                    android:fontFamily="@font/satoshi_bold"
+                                    android:textSize="16sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:elevation="0sp"
+                        android:fontFamily="@font/satoshi_medium"
+                        android:textSize="14sp"
+                        android:id="@+id/btnCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="12sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="18sp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/button_blue_curve_4"
+                        android:text="Create a Trip"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Your Trips"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:textColor="@color/black_text"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Your trip itineraries and planned trips are placed here"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="4sp"
+            android:textColor="@color/new_lite_blue"
+            android:fontFamily="@font/satoshi_medium"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/line_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@color/white">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spTravelStyle"
+                    android:entries="@array/Trip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:paddingStart="14sp"
+                    android:paddingEnd="14sp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/satoshi_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="56sp"
+                   />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <RelativeLayout
+            android:id="@+id/viewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/trip_planner_trips_item"/>
+                <include layout="@layout/trip_planner_trips_item"/>
+                <include layout="@layout/trip_planner_trips_item"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

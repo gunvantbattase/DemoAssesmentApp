@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo App</string>
+
+
+    <string-array name="Trip">
+        <item>Planed Trips</item>
+    </string-array>
+
+    <string-array name="trip_planner_travel_style">
+        <item>Select travel style</item>
+        <item>Solo</item>
+        <item>Couple</item>
+        <item>Family</item>
+        <item>Group</item>
+    </string-array>
+</resources>

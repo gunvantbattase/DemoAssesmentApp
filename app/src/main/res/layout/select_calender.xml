@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16sp">
+
+        <ImageView
+            android:src="@drawable/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgClose"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="1"
+            android:fontFamily="@font/satoshi_bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"/>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/linear_gray_curve"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.kizitonwose.calendar.view.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cv_dayViewResource="@layout/calendar_day_layout"
+            app:cv_orientation="vertical"
+            app:cv_monthHeaderResource="@layout/calendar_day_titles_container"
+            android:layout_margin="10sp"
+            android:layout_above="@id/bottomBt"/>
+
+        <LinearLayout
+            android:id="@+id/bottomBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <TableRow
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:background="@drawable/linear_gray_curve"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                >
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/satoshi_medium"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_black_stroke"
+                        android:text="Sat, Feb2"
+                        android:padding="12sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/satoshi_medium"
+                        android:drawableRight="@drawable/ic_calendar_18"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/satoshi_medium"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_black_stroke"
+                        android:text="Sat, Feb2"
+                        android:padding="12sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/satoshi_medium"
+                        android:drawableRight="@drawable/ic_calendar_18"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:elevation="0sp"
+                android:fontFamily="@font/satoshi_medium"
+                android:textSize="14sp"
+                android:id="@+id/btnChoosedate"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_blue_curve_4"
+                android:text="Choose Date"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
